@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Pesca/MouseSequence.cs" Link="MouseSequence.cs" />
+    <Compile Include="../../Pesca/FishingCue.cs" Link="FishingCue.cs" />
+    <Compile Include="../../Pesca/FishingRecovery.cs" Link="FishingRecovery.cs" />
+    <None Update="Fixtures/*.rgb" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

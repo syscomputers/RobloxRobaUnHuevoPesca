@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Pesca/Pesca.csproj" />
+  <Project Path="tests/Pesca.Tests/Pesca.Tests.csproj" />
+</Solution>
