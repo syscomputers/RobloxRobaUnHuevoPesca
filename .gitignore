@@ -361,3 +361,10 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Distribución de Windows: incluir solo los archivos necesarios para ejecutar
+/Pesca/AplicacionWindows/*
+!/Pesca/AplicacionWindows/Pesca.exe
+!/Pesca/AplicacionWindows/Pesca.dll
+!/Pesca/AplicacionWindows/Pesca.deps.json
+!/Pesca/AplicacionWindows/Pesca.runtimeconfig.json

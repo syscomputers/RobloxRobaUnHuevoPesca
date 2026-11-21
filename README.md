@@ -18,6 +18,17 @@ Roblox se maximiza al iniciar y durante la pesca. Si el cursor sale del monitor 
 
 El detector reconoce el botón rojo con texto blanco que acompaña a la barra de captura observada. Está ajustado a esa interfaz; un cambio de diseño puede requerir recalibrarlo. No lee la memoria del juego.
 
+## Ejecutable de Windows
+
+Compila desde la carpeta de la solución:
+
+~~~powershell
+dotnet build Pesca.slnx --configuration Release
+.\Pesca\AplicacionWindows\Pesca.exe --version
+~~~
+
+El ejecutable y sus archivos necesarios se generan en `Pesca/AplicacionWindows/`, tanto en Debug como en Release. Abre `Pesca.exe` desde esa carpeta; requiere .NET 10 Desktop Runtime para Windows. Git incluye Pesca.exe, Pesca.dll, Pesca.deps.json y Pesca.runtimeconfig.json para descargar y ejecutar la aplicación desde esa carpeta. Los símbolos de depuración y los registros quedan excluidos. Evita compilar ambas configuraciones simultáneamente porque comparten destino.
+
 ## Comprobación
 
 ~~~powershell
